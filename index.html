@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Daisy UI & Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+                maxWidth: {
+                    "main" : "1171px",
+                },
+                colors:{
+                    "green": "#1DD100",
+                }
+            }
+        }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>P-Ticket</title>
+</head>
+<body>
+    <header>
+        <div class="max-w-main mx-auto px-1">
+            <div class="navbar bg-base-100 px-0 pt-12 pb-8">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                        </div>
+                        <a class="text-4xl font-extrabold p-0">P-Ticket</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <a class="flex items-center gap-2.5 rounded-xl py-4 px-8 border border-green bg-green/10  text-green text-xl font-bold" href="#">
+                            Bus
+                            <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 13C3 13.5304 3.21071 14.0391 3.58579 14.4142C3.96086 14.7893 4.46957 15 5 15C5.53043 15 6.03914 14.7893 6.41421 14.4142C6.78929 14.0391 7 13.5304 7 13M3 13C3 12.4696 3.21071 11.9609 3.58579 11.5858C3.96086 11.2107 4.46957 11 5 11C5.53043 11 6.03914 11.2107 6.41421 11.5858C6.78929 11.9609 7 12.4696 7 13M3 13H1V2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H16C17.3261 1 18.5979 1.7375 19.5355 3.05025C20.4732 4.36301 21 6.14348 21 8M7 13H15M15 13C15 13.5304 15.2107 14.0391 15.5858 14.4142C15.9609 14.7893 16.4696 15 17 15C17.5304 15 18.0391 14.7893 18.4142 14.4142C18.7893 14.0391 19 13.5304 19 13M15 13C15 12.4696 15.2107 11.9609 15.5858 11.5858C15.9609 11.2107 16.4696 11 17 11C17.5304 11 18.0391 11.2107 18.4142 11.5858C18.7893 11.9609 19 12.4696 19 13M19 13H21V8M21 8H16.5L15 1M1 6H16M6 1V6M11 1V6" stroke="#1DD100" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <!-- Ticketing Section -->
+
+    <section class="bg-[#F7F8F8] border-t-2 border-green rounded-t-[88px]">
+        <div class="max-w-main mx-auto py-32">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-4xl text-[#030712] font-bold mb-6">P.H Paribahan</h2>
+                <p class="text-[#030712]/60">
+                    Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .
+                </p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
