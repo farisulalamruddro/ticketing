@@ -144,6 +144,9 @@ function applyCoupon(totalPrice) {
     let discountPercentage = couponCodes[enteredCouponCode] || 0;
 
     let discountedPrice = totalPrice - (totalPrice * discountPercentage) / 100;
+      
+    discountedPrice = Math.round(discountedPrice);
+
     // Update the grand total with the discounted price
     grandTotal(discountedPrice);
   });
