@@ -491,7 +491,7 @@
                         </div>
                     </div>
                     <div class="mt-6">
-                        <form action="" class="flex flex-col gap-6">
+                        <form id="checkoutForm" action="" class="flex flex-col gap-6">
                             <div class="flex flex-col gap-4">
                                 <label for="name" class="text-dark text-base font-semibold">Passenger Name*</label>
                                 <input type="text" name="name" id="name" placeholder="Enter your name" class="p-6 border border-dark/10 rounded-xl text-dark text-base" required>
@@ -506,11 +506,36 @@
                             </div>
                             <input type="submit" value="Next" class="text-lg font-extrabold text-white bg-green rounded-2xl p-6 cursor-pointer">
                         </form>
+                        <div class="flex items-center justify-center gap-10 mt-6 text-dark/60 underline">
+                            <a href="#">Terms and Conditions</a>
+                            <a href="#">Cancellation Policy</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <div id="confirmedPop" class="hidden bg-[#0000003b] w-full h-full bg-white rounded-2xl fixed inset-2/4 translate-y-[-50%] translate-x-[-50%] flex items-center justify-center text-center">
+        <div class="bg-white max-w-[718px] p-10 rounded-2xl flex flex-col items-center justify-center gap-10">
+            <svg width="105" height="102" viewBox="0 0 105 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M102 56.7655C97.9998 76.36 82.9208 94.8103 61.7621 98.9329C51.4426 100.946 40.7378 99.7188 31.172 95.4247C21.6061 91.1305 13.6668 83.9889 8.48446 75.0166C3.30217 66.0442 1.1411 55.6987 2.30896 45.453C3.47682 35.2073 7.91407 25.5838 14.9889 17.9527C29.5 2.29275 54.0025 -2.01805 74.0013 5.81976" stroke="#20AE5C" stroke-width="4" stroke-linecap="square" stroke-linejoin="round"/>
+            <path d="M34.0042 48.9274L54.0029 68.5219L102 17.5762" stroke="#20AE5C" stroke-width="4" stroke-linecap="square" stroke-linejoin="round"/>
+            </svg>
+            <p class="text-green font-bold text-2xl">SUCCESS</p>
+            <p class="text-xl">
+                <span class="font-medium">Thank you for Booking Our Bus Seats. 
+            We are working hard to find the best service and deals for you. </span><br>
+            Shortly you will find a confirmation in your email.</p>
+            
+            <button id="continueCheckout" class="w-72 bg-green text-white rounded-3xl py-4">
+                CONTINUE
+            </button>
+
+        </div>
+    </div>
+
     <script src="assets/js/function.js"></script>
 </body>
 </html>

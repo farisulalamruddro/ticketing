@@ -154,3 +154,32 @@ function applyCoupon(totalPrice) {
 
 
 seatPlans();
+
+
+
+// Checkout Popup
+
+function checkoutPop() {
+  let checkoutForm = document.getElementById("checkoutForm");
+  let confirmedPop = document.getElementById("confirmedPop");
+  let continueCheckout = document.getElementById("continueCheckout");
+
+  checkoutForm.addEventListener("submit", checkoutFunc);
+  continueCheckout.addEventListener("click", confirmFunc);
+
+}
+
+function checkoutFunc(e) {
+  e.preventDefault();
+  confirmedPop.classList.remove("hidden");
+    if (checkoutForm) {
+      checkoutForm.reset();
+    }
+}
+function confirmFunc(e) {
+  e.preventDefault();
+  confirmedPop.classList.add("hidden");
+}
+
+
+checkoutPop();
